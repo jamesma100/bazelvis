@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/jamesma100/bazelvis/pkg/runner"
-	"github.com/jamesma100/bazelvis/pkg/parser"
-	"os"
+  "github.com/jamesma100/bazelvis/pkg/runner"
+  "github.com/jamesma100/bazelvis/pkg/parser"
+  "os"
   "fmt"
 )
 

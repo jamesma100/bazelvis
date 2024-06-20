@@ -32,8 +32,10 @@ func BuildMap(contents string) map[string][]string {
 			continue
 		} else {
 			src := trimTarget(parts[0])
-			dep := trimTarget(parts[1])
-			m[src] = append(m[src], dep)
+			deps := strings.Split(trimTarget(parts[1]), "\\n")
+			for _, dep := range deps {
+				m[src] = append(m[src], dep)
+			}
 		}
 	}
 	return m

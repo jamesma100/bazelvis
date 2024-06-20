@@ -4,7 +4,7 @@ import "os/exec"
 import "log"
 
 func GetGraph(arg string) string {
-	cmd := exec.Command("./bazel", "query", "--notool_deps", "deps("+arg+")", "--output", "graph")
+	cmd := exec.Command("bazel", "query", "--notool_deps", "deps("+arg+")", "--output", "graph")
 	log.Printf("Running command: %s\n", cmd)
 	stdout, err := cmd.Output()
 	if err != nil {

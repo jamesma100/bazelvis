@@ -129,6 +129,7 @@ func (vi *view_info) writeUp(refreshView bool, end int) {
 func (vi *view_info) refreshView() {
 	v, _ := vi.gui.View("deps")
 	v.Clear()
+	v.Title = vi.target
 	for idx, line := range vi.lines {
 		if idx == vi.cursor {
 			fmt.Fprintf(v, "\x1b[0;30;47m")

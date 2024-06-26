@@ -26,7 +26,7 @@ func (vi *view_info) layout(g *gocui.Gui) error {
 			return err
 		}
 
-		v.Title = "welcome to bazelvis!"
+		v.Title = vi.target
 
 		_, vi.maxLines = v.Size()
 		if vi.lines == nil {

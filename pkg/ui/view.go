@@ -20,8 +20,7 @@ type view_info struct {
 // generate view
 func (vi *view_info) layout(g *gocui.Gui) error {
 	maxX, maxY := g.Size()
-	left := maxX / 8
-	if v, err := g.SetView("deps", left, 3, maxX-left, maxY-8); err != nil {
+	if v, err := g.SetView("deps", maxX/2-40, maxY/2-10, maxX/2+40, maxY/2+10); err != nil {
 		if err != gocui.ErrUnknownView {
 			return err
 		}

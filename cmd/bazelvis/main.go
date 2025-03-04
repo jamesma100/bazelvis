@@ -20,6 +20,13 @@ func main() {
 			arg = "//" + arg
 		}
 	}
+	colSplt := strings.Split(arg, ":")
+	if len(colSplt) == 1 {
+		slashSplt := strings.Split(arg, "/")
+		target := slashSplt[len(slashSplt)-1]
+		arg += ":"
+		arg += target
+	}
 	contents := runner.GetGraph(arg)
 	m := parser.BuildMap(contents)
 

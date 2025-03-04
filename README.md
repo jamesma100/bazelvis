@@ -16,7 +16,8 @@ bazelvis //main:hello-world
 ```
 And there you have it!
 
-![2024-06-19 20 15 49](https://github.com/jamesma100/bazelvis/assets/44740178/e7f913b5-8532-47d1-9163-429b7b2ecc7c)
+![bazelvis](https://github.com/user-attachments/assets/d099dbac-b10a-403b-b387-d0e97eb04f41)
+
 
 ## Setup
 Just run `./build.sh` and move the generated Go binary under `./bin/bazelvis` to your `PATH`.
